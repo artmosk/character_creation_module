@@ -8,6 +8,24 @@ from random import randint
 from graphic_arts.start_game_banner import run_screensaver
 
 
+class Character:
+    def __init__(self, name):
+        self.name = name
+
+
+class Warrior(Character):
+    def __init__(self, name):
+        super().__init__(name)
+
+class Mage(Character):
+    def __init__(self, name):
+        super().__init__(name)
+
+
+class Healer(Character):
+    def __init__(self, name):
+        super().__init__(name)
+
 def attack(char_name: str, char_class: str) -> str:
     """Calculation attack for character"""
     if char_class == 'warrior':
